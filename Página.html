@@ -1,0 +1,57 @@
+<html<html>
+<head> CALCULADORA BASICA PARA QUE EL PROFE NO ME JALE :(</head>
+<body style="color:green" style="font-size: xx-large;">
+<p>Profe buenas noches, ingrese su sueldazo y sus gastos :D</p>
+<label>Sueldazo : </label>
+<input id="en1" type="number" style="font-size: xx-large;"><br><br>
+<label>Gastos :( : </label>
+<input id="en2" type="number" style="font-size: xx-large;"><br><br>
+<button onclick="suma()" style="font-size: xx-large;">x+y</button>
+<button onclick="division()" style="font-size: xx-large;">x/y</button>
+<button onclick="producto()" style="font-size: xx-large;">x*y</button>
+<button onclick="resta1()" style="font-size: xx-large;">x-y</button>
+<button onclick="resta2()" style="font-size: xx-large;">y-x</button>
+<button onclick="raiz1()" style="font-size: xx-large;"><img src="https://significado.com/wp-content/uploads/Ra%C3%ADz-cuadrada-450x285.jpg" width="30px"></button>
+<button onclick="raiz2()" style="font-size: xx-large;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnlANmo3HwP4el_DowF69Y9Ksn6vLCNVU3X8dFrKugEw&s" width="30px"></button>
+<p id="demo1"></p>
+
+<script>
+function suma(){
+    x = document.getElementById("en1").value;
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(x) + Number(y);
+}
+function division(){
+    x = document.getElementById("en1").value;
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(x)/Number(y);
+}
+function producto(){
+    x = document.getElementById("en1").value;
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(x)*Number(y);
+}
+function resta1(){
+    x = document.getElementById("en1").value;
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(x)-Number(y);
+}
+function resta2(){
+    x = document.getElementById("en1").value;
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(y)-Number(x);
+}
+function raiz1(){
+    x = document.getElementById("en1").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(x));
+}
+function raiz2(){
+    y = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(y));
+}
+</script>
+
+
+
+
+</body></html>
